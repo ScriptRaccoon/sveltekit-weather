@@ -1,3 +1,4 @@
+import { getName } from "country-list";
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
@@ -8,6 +9,7 @@ export async function get(event) {
     const res = await fetch(url);
     if (res.ok) {
         const data = await res.json();
+        data.country = getName(data.sys.country);
         return {
             status: res.status,
             body: { data },

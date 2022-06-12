@@ -4,7 +4,8 @@
 </script>
 
 <section>
-    <h2>{data.name}, {data.sys.country}</h2>
+    <h2>{data.name}</h2>
+    <h3>{data.country}</h3>
     <p class="description">{data.weather[0]?.description}</p>
     <div class="summary">
         <img
@@ -53,6 +54,15 @@
         font-weight: 500;
         font-size: 36px;
         color: yellow;
+    }
+    h3 {
+        color: yellow;
+        font-weight: unset;
+        opacity: 0.7;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: -4px;
+        text-transform: uppercase;
     }
 
     .summary {
