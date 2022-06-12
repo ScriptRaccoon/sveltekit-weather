@@ -60,8 +60,8 @@
     section {
         font-size: 20px;
         max-width: 340px;
-        padding: 10px;
         margin: 0 auto;
+        padding: 5px;
     }
     h2 {
         font-weight: 500;
