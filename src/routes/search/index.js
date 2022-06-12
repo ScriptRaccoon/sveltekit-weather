@@ -14,7 +14,7 @@ export async function get(event) {
             },
         };
     }
-    const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}&lang=de`;
+    const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}`;
     try {
         const res = await fetch(url);
         if (res.ok) {
