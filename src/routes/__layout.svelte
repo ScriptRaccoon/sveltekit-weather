@@ -17,6 +17,7 @@
 
 <style>
     main {
+        padding: 10px;
         margin-top: 15px;
     }
 </style>

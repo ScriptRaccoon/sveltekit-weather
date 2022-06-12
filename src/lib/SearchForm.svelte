@@ -7,10 +7,9 @@
     form {
         display: flex;
         gap: 15px;
-        justify-content: center;
-        padding: 10px;
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        padding: 10px;
     }
     button {
         background-color: darkgreen;

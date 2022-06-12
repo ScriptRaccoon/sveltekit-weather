@@ -1,21 +1,49 @@
 <header>
-    <a href="/" title="home"><i class="fa-solid fa-house" /></a>
+    <nav>
+        <ul>
+            <li>
+                <a
+                    target="_blank"
+                    href="https://github.com/ScriptRaccoon/sveltekit-weather/"
+                    title="GitHub repository"
+                >
+                    <i class="fa-brands fa-github" />
+                </a>
+            </li>
+            <li>
+                <a href="/" title="Home"
+                    ><i class="fa-solid fa-house" /></a
+                >
+            </li>
+        </ul>
+    </nav>
     <h1>Weather App</h1>
+    <p>made with SvelteKit</p>
 </header>
 
 <style>
     header {
-        padding: 30px 10px;
+        padding: 5px 10px 30px 10px;
+        text-align: center;
     }
     h1 {
         font-weight: 300;
-        text-align: center;
+
         font-size: 40px;
     }
+
+    p {
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
     a {
-        position: absolute;
-        top: 10px;
-        right: 10px;
         opacity: 0.6;
     }
     a:hover {
