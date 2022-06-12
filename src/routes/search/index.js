@@ -14,14 +14,14 @@ export async function get(event) {
             },
         };
     }
-    const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}`;
+    const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}&lang=de`;
     try {
         const res = await fetch(url);
         if (res.ok) {
             const data = await res.json();
             data.country = getName(data.sys.country);
             return {
-                body: { data },
+                body: { data, error: "" },
             };
         } else if (res.status === 404) {
             return {
