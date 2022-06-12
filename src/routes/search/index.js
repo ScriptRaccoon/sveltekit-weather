@@ -4,20 +4,31 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get(event) {
-    const city = event.url.searchParams.get("city");
-    const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}`;
-    const res = await fetch(url);
-    if (res.ok) {
-        const data = await res.json();
-        data.country = getName(data.sys.country);
+    try {
+        const city = event.url.searchParams.get("city");
+        const url = `${BASE_URL}?q=${city}&units=metric&appid=${API_KEY}`;
+        const res = await fetch(url);
+        if (res.ok) {
+            const data = await res.json();
+            data.country = getName(data.sys.country);
+            return {
+                body: { data },
+            };
+        } else if (res.status === 404) {
+            return {
+                body: {
+                    error: `The location '${city}' could not be found`,
+                },
+            };
+        } else {
+            return {
+                body: { error: "Internal server error" },
+            };
+        }
+    } catch (err) {
+        console.log(err);
         return {
-            status: res.status,
-            body: { data },
-        };
-    } else {
-        return {
-            status: res.status,
-            body: {},
+            body: { error: "Internal server error" },
         };
     }
 }
