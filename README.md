@@ -12,7 +12,11 @@ The following features of SvelteKit are used:
     -   nested routes
 -   layout
 -   server-side rendering
-    -   disabling JS on client still works
--   page endpoint
+    -   the app still works when disabling JS on the client
+-   page load
     -   fetch API data
     -   environment variables
+
+---
+
+If you are coming from the tutorial on YouTube, which was published in August 2022: The code is in the branch `tutorial`. The main branch has more recent code, including in particular SvelteKit's current routing system which was introduced shortly after the recording of the tutorial.
