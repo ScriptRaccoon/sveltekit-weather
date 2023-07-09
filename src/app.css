@@ -1,30 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    background-color: #22222f;
-    color: #f0f0f0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.5;
+	background-color: #22222f;
+	color: #f0f0f0;
 }
 
 button,
 input {
-    font-family: inherit;
-    background: none;
-    font-size: inherit;
-    border: none;
-    outline: none;
-    color: inherit;
+	font-family: inherit;
+	background: none;
+	font-size: inherit;
+	border: none;
+	outline: none;
+	color: inherit;
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 a {
-    color: inherit;
+	color: inherit;
 }

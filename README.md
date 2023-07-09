@@ -6,13 +6,13 @@ https://weather-sveltekit.netlify.app/
 
 The following features of SvelteKit are used:
 
-- components
-    - scoped styles
-- routes
-    - nested routes
-- layout
-- server-side rendering
-    - disabling JS on client still works
-- page endpoint
-    - fetch API data
-    - environment variables
+-   components
+    -   scoped styles
+-   routes
+    -   nested routes
+-   layout
+-   server-side rendering
+    -   disabling JS on client still works
+-   page endpoint
+    -   fetch API data
+    -   environment variables
