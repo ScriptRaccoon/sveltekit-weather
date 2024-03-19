@@ -3,9 +3,7 @@
 		<ul>
 			<li>
 				<a
-					target="_blank"
-					href="https://github.com/ScriptRaccoon/sveltekit-weather/"
-					title="GitHub repository"
+					
 				>
 					<i class="fa-brands fa-github" />
 				</a>
